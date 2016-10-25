@@ -1,0 +1,13 @@
+applications:
+- path: .
+  memory: 128M
+  instances: 1
+  domain: stage1.mybluemix.net
+  name: nri-test
+  host: nri-test
+  disk_quota: 1024M
+  services:
+  - nri-test-cache
+  - nri-test-autoscaling
+  - nri-test-redis
+  - nri-cloudamqp
